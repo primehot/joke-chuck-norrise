@@ -11,12 +11,12 @@ public class ChuckNorriseQuotesServiceImpl implements ChuckNorriseQuotesService 
 
     private final ChuckNorrisQuotes quotes;
 
-    public ChuckNorriseQuotesServiceImpl() {
-        quotes = new ChuckNorrisQuotes();
+    public ChuckNorriseQuotesServiceImpl(ChuckNorrisQuotes quotes) {
+        this.quotes = quotes;
     }
 
     @Override
-    public String getChcksQuot() {
+    public String getChacksQuot() {
         return quotes.getRandomQuote();
     }
 
